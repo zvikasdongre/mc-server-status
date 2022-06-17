@@ -15,24 +15,20 @@
 </script>
 
 <svelte:head>
-  <title>About</title>
-  <meta name="description" content="About this app" />
+  <title>About - MC Status</title>
+  <meta name="description" content="About MC Status." />
 </svelte:head>
 
-<div class="content">
-  <h1>About this app</h1>
+<div class="content text-lg">
+  <h1 class="text-2xl font-bold mb-4">About MC Status</h1>
 
-  <p>
-    This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-    following into your command line and following the prompts:
+  <p class="mb-2">
+    This app is made to check the status of minecraft servers, You can check the server's status
+    almost instantly and without any cache.
   </p>
-
-  <pre>npm init svelte</pre>
-
-  <p>
-    The page you're looking at is purely static HTML, with no client-side interactivity needed.
-    Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-    the devtools network panel and reloading.
+  <p class="mb-2">
+    This website is made by Vikas Dongre, I made this website to be used completely Free of charge.
+    Enjoy :)
   </p>
 </div>
 

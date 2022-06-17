@@ -16,45 +16,37 @@
       })
     );
   }
+
+  let current_year = new Date().getFullYear();
 </script>
+
+<svelte:head>
+  <title>MC Status</title>
+  <meta name="application-name" content="MC Status" />
+  <meta name="description" content="Check Status of minecraft server, instantly!" />
+  <meta name="author" content="Vikas Dongre" />
+  <meta
+    name="keywords"
+    content="Minecraft, Server, Status, Checker, server-status, minecraft-server-status"
+  />
+</svelte:head>
 
 <Header />
 
-<main>
+<main class="py-20 px-4 flex justify-center flex-col sm:px-16 md:m-auto md:w-full lg:w-3/4">
   <slot />
 </main>
 
-<footer>
-  <p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+<footer class="py-6 w-full flex items-center flex-col  mt-10">
+  <p class="font-bold">
+    Made with ❤️ by <a
+      href="http://github.com/zvikasdongre/"
+      target="_blank"
+      rel="noreferrer"
+      class="underline text-purple-500">Vikas Dongre</a
+    >
+  </p>
+  <p class="">
+    &copy; Vikas Dongre {current_year}
+  </p>
 </footer>
-
-<style>
-  main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-  }
-
-  footer a {
-    font-weight: bold;
-  }
-
-  @media (min-width: 480px) {
-    footer {
-      padding: 40px 0;
-    }
-  }
-</style>
