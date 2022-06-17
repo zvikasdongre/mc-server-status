@@ -29,6 +29,7 @@
     name="keywords"
     content="Minecraft, Server, Status, Checker, server-status, minecraft-server-status"
   />
+  <meta name="google-site-verification" content="uqpNwRuKsBr4E6LcYGzxMNyccqNdYRIgYOF_l32ij60" />
 </svelte:head>
 
 <Header />
