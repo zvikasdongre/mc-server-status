@@ -29,6 +29,12 @@
   }
 </script>
 
+<svelte:head>
+  <title>MC Status</title>
+  <meta name="application-name" content="MC Status" />
+  <meta name="description" content="Check Status of minecraft server, instantly!" />
+</svelte:head>
+
 <div class="flex sm:flex-row flex-col gap-6">
   <section class="flex-1">
     <h1
@@ -73,7 +79,7 @@
     {#if status}
       <div
         class="p-8 bg-zinc-800 rounded-lg shadow-md"
-        transition:slide={{
+        in:slide={{
           duration: 300,
           easing: quintOut
         }}
@@ -163,7 +169,13 @@
               {/if}
             </ul>
           {:else if result.error}
-            <div class="flex">
+            <div
+              class="flex"
+              in:slide={{
+                duration: 300,
+                easing: quintOut
+              }}
+            >
               <h2 class="font-bold">
                 <span class="text-red-500">An Error occured!</span>
               </h2>
@@ -172,7 +184,13 @@
               {result.error}
             </p>
           {:else}
-            <div class="flex">
+            <div
+              class="flex"
+              in:slide={{
+                duration: 300,
+                easing: quintOut
+              }}
+            >
               <h2 class="font-bold">
                 Server is
                 <span class="text-red-500">Offline</span>
