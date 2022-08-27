@@ -30,6 +30,10 @@
     content="Minecraft, Server, Status, Checker, server-status, minecraft-server-status"
   />
   <meta name="google-site-verification" content="uqpNwRuKsBr4E6LcYGzxMNyccqNdYRIgYOF_l32ij60" />
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116866942580907"
+    crossorigin="anonymous"></script>
 </svelte:head>
 
 <Header />
