@@ -20,7 +20,7 @@ export const get = async ({ params, url }) => {
         const address = parseAddress(ip, 19132)
 
         try {
-            const server_status = await statusBedrock(address?.host ? address.host : "", address?.port, { timeout: 600 });
+            const server_status = await statusBedrock(address?.host ? address.host : "", address?.port, { timeout: 1000 });
             server_status.serverGUID = server_status.serverGUID.toString()
 
             return {
@@ -41,7 +41,7 @@ export const get = async ({ params, url }) => {
     } else if (type == 'java') {
         const address = parseAddress(ip, 25565)
         try {
-            const server_status = await status(address?.host ? address.host : "", address?.port, { timeout: 600 });
+            const server_status = await status(address?.host ? address.host : "", address?.port, { timeout: 1000 });
 
             return {
                 // @ts-ignore
