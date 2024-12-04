@@ -159,6 +159,9 @@
                     class:text-red-500={result.roundTripLatency >= 320}
                     >{result.roundTripLatency}ms</span
                   >
+                  <span class="text-neutral-500 text-xs ml-2"
+                    >Fetched From {result.edge_region}</span
+                  >
                 </li>
               {/if}
               {#if result.gameMode}
