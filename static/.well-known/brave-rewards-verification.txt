@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: mcstatus.vercel.app
-Token: 8b6f00ba3e8fda509b82471c639d91eec6ef3695b5ea8b47a60d91dbe34928b0
