@@ -1,0 +1,6 @@
+name = "mc-server-status"
+main = ".svelte-kit/cloudflare/_worker.js"
+compatibility_date = "2025-01-01"
+assets.directory = ".cloudflare/public"
+assets.binding = "ASSETS"
+compatibility_flags = ["nodejs_compat_v2"]
