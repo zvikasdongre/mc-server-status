@@ -95,7 +95,7 @@ export const GET: RequestHandler = async ({ url, request }) => {
 
             const status = JSON.parse(jsonResponse.value);
             await socket.end();
-            return json(Object.assign(status, { latency }));
+            return json(Object.assign(response, status));
         }
     } catch {
         return json({
